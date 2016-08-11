@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=neon">
+</head>
+<body>
+    <div class="page-header" style="background-color: #961e78;">
+      <a style="text-decoration: none;" href="{% url 'index' %}"><div class="font-effect-neon"><h1 style="margin-top: 10px; color: white; margin-left: 10px; font-size: 100px; font-family: 'Rancho';">KING SD님의 블로그</h1></div></a>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+</html>
